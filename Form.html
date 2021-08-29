@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Subjective Evalution Form</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+      rel="stylesheet"
+    />
+    <style>
+      html,
+      body {
+        min-height: 100%;
+      }
+      body,
+      div,
+      form,
+      input,
+      p {
+        padding: 0;
+        margin: 0;
+        outline: none;
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 14px;
+        color: #666;
+        line-height: 22px;
+      }
+      span.required {
+        color: red;
+      }
+      h1 {
+        font-weight: 400;
+      }
+      h4 {
+        margin: 15px 0 4px;
+      }
+      .testbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: inherit;
+        padding: 3px;
+      }
+      form {
+        width: 100%;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 2px 5px #ccc;
+      }
+      input:not([type='radio']) {
+        width: calc(100% - 10px);
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        vertical-align: middle;
+      }
+      input[type='radio'] {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      .email {
+        display: block;
+        width: 45%;
+      }
+      input:hover,
+      textarea:hover {
+        outline: none;
+        border: 1px solid #095484;
+      }
+      th,
+      td {
+        width: 15%;
+        padding: 15px 0;
+        border-bottom: 1px solid #ccc;
+        text-align: center;
+        vertical-align: unset;
+        line-height: 18px;
+        font-weight: 400;
+        word-break: break-all;
+      }
+      .first-col {
+        width: 16%;
+        text-align: left;
+      }
+      table {
+        width: 100%;
+      }
+      textarea {
+        width: calc(100% - 6px);
+      }
+      .btn-block {
+        margin-top: 20px;
+        text-align: center;
+      }
+      button {
+        width: 150px;
+        padding: 10px;
+        border: none;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        background-color: #095484;
+        font-size: 16px;
+        color: #fff;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0666a3;
+      }
+      @media (min-width: 568px) {
+        th,
+        td {
+          word-break: keep-all;
+        }
+      }
+
+      .Heading {
+        text-align: center;
+        font-size: 25px;
+        color: black;
+      }
+
+      select {
+        appearance: none;
+        background-color: transparent;
+        border: none;
+        padding: 0 1em 0 0;
+        margin: 0;
+        width: 100%;
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 14px;
+        color: #666;
+        cursor: inherit;
+        line-height: inherit;
+      }
+      .select {
+        width: 100%;
+        min-width: 15ch;
+        max-width: 30ch;
+        border: 1px solid var(--select-border);
+        border-radius: 0.25em;
+        padding: 0.25em 0.5em;
+        font-size: 1.25rem;
+        cursor: pointer;
+        line-height: 1.1;
+        background-color: #fff;
+        background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+      }
+      :root {
+        --select-border: #777;
+        --select-focus: blue;
+        --select-arrow: var(--select-border);
+      }
+      /* .radio-toolbar input[type="radio"] {
+        display: none;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="testbox">
+      <form action="https://usebasin.com/f/1152b7a87b70" method="POST">
+        <div class="Heading">
+          <h1>Subjective Evaluation Form</h1>
+          <p>
+            Please take a few minutes to give this subjective test for our
+            research.
+          </p>
+        </div>
+        <hr />
+        <div class="Email">
+          <label for="Email-address"
+            ><h2>Email address <span class="required">*</span></h2></label
+          >
+          <input class="email" type="text" name="Email" required />
+        </div>
+        <br>
+        <label for="Gender"><h2>Gender <span class="required">*</span></h2></label>
+        <div>
+          <input type="radio" id="male" name="gender" value="male" required>
+          <label for="male"> Male</label>
+        </div>
+        <div>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female"> Female</label>
+        </div>
+        <br>
+        <!-- <br><br><br> -->
+        <label for="Age-group"><h2>Age-group <span class="required">*</span></h2></label>
+        <!-- <br> -->
+        <div class="select">
+          <select name="Age-group" id="Age-group" required>
+            <option value="below18">Below 18</option>
+            <option value="18-30">18-30</option>
+            <option value="30-45">30-45</option>
+            <option value="45-60">45-60</option>
+            <option value="above60">Above 60</option>
+          </select> 
+        </div>
+        <hr />
+        <br>
+        <div class="test1">
+          <div class="question">
+            <h2>First pair <span class="required">*</span></h2>
+            <table>
+              <tr>
+                <th>
+                  <h4>File1</h4>
+                </th>
+                <th>
+                  <h4>File2</h4>
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  <audio controls>
+                    <source src="audio_files/original_female.wav" />
+                    Your browser does not support audio.
+                  </audio>
+                </td>
+                <td>
+                  <audio controls>
+                    <source src="audio_files/anonymized_female.wav" />
+                    Your browser does not support audio.
+                  </audio>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="test1.responses">
+            <div class="test1.response1">
+              <table>
+                <tr>
+                  <th class="first-col"><h3>Audio file 1</h3></th>
+                  <th>Very High</th>
+                  <th>High</th>
+                  <th>Fair</th>
+                  <th>Low</th>
+                  <th>Very Low</th>
+                </tr>
+                  <tr>
+                    <td class="first-col">Naturlness</td>
+                    <td>
+                      <input
+                        type="radio"
+                        value="5"
+                        name="test1.naturlness1"
+                        required
+                      />
+                    </td>
+                    <td>
+                      <input type="radio" value="4" name="test1.naturlness1" />
+                    </td>
+                    <td>
+                      <input type="radio" value="3" name="test1.naturlness1" />
+                    </td>
+                    <td>
+                      <input type="radio" value="2" name="test1.naturlness1" />
+                    </td>
+                    <td>
+                      <input type="radio" value="1" name="test1.naturlness1" />
+                    </td>
+                  </tr>
+                <!-- </div> -->
+                <tr>
+                  <td class="first-col">Intelligibility</td>
+                  <td>
+                    <input type="radio" value="5" name="test1.intelligibility1" required />
+                  </td>
+                  <td><input type="radio" value="4" name="test1.intelligibility1" /></td>
+                  <td><input type="radio" value="3" name="test1.intelligibility1" /></td>
+                  <td><input type="radio" value="2" name="test1.intelligibility1" /></td>
+                  <td><input type="radio" value="1" name="test1.intelligibility1" /></td>
+                </tr>
+              </table>
+            </div>
+            <div class="test1.response2">
+              <table>
+                <tr>
+                  <th class="first-col"><h3>Audio file 2</h3></th>
+                  <th>Very High</th>
+                  <th>High</th>
+                  <th>Fair</th>
+                  <th>Low</th>
+                  <th>Very Low</th>
+                </tr>
+                <tr>
+                  <td class="first-col">Naturlness</td>
+                  <td>
+                    <input
+                      type="radio"
+                      value="5"
+                      name="test1.naturlness2"
+                      required
+                    />
+                  </td>
+                  <td>
+                    <input type="radio" value="4" name="test1.naturlness2" />
+                  </td>
+                  <td>
+                    <input type="radio" value="3" name="test1.naturlness2" />
+                  </td>
+                  <td>
+                    <input type="radio" value="2" name="test1.naturlness2" />
+                  </td>
+                  <td>
+                    <input type="radio" value="1" name="test1.naturlness2" />
+                  </td>
+                </tr>
+              <!-- </div> -->
+                <tr>
+                  <td class="first-col">Intelligibility</td>
+                  <td>
+                    <input type="radio" value="5" name="test1.intelligibility2" required />
+                  </td>
+                  <td><input type="radio" value="4" name="test1.intelligibility2" /></td>
+                  <td><input type="radio" value="3" name="test1.intelligibility2" /></td>
+                  <td><input type="radio" value="2" name="test1.intelligibility2" /></td>
+                  <td><input type="radio" value="1" name="test1.intelligibility2" /></td>
+                </tr>
+              </table>
+            </div>
+            <div class="test1.response3">
+              <table>
+                <tr>
+                  <th class="first-col"><h3>Audio file 1-2</h3></th>
+                  <th>Very High</th>
+                  <th>High</th>
+                  <th>Fair</th>
+                  <th>Low</th>
+                  <th>Very Low</th>
+                </tr>
+                <tr>
+                  <td class="first-col">Speaker Similarity</td>
+                  <td>
+                    <input
+                      type="radio"
+                      value="5"
+                      name="test1.similarity"
+                      required
+                    />
+                  </td>
+                  <td>
+                    <input type="radio" value="4" name="test1.similarity" />
+                  </td>
+                  <td>
+                    <input type="radio" value="3" name="test1.similarity" />
+                  </td>
+                  <td>
+                    <input type="radio" value="2" name="test1.similarity" />
+                  </td>
+                  <td>
+                    <input type="radio" value="1" name="test1.similarity" />
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <br>
+        <div class="test2">
+          <div class="question">
+            <h2>Second pair <span class="required">*</span></h2>
+            <table>
+              <tr>
+                <th>
+                  <h4>File1</h4>
+                </th>
+                <th>
+                  <h4>File2</h4>
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  <audio controls>
+                    <source src="audio_files/84-121550-0010_original.wav" />
+                    Your browser does not support audio.
+                  </audio>
+                </td>
+                <td>
+                  <audio controls>
+                    <source src="audio_files/84-121550-0010_anon.wav" />
+                    Your browser does not support audio.
+                  </audio>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="test2.responses">
+            <div class="test2.response1">
+              <table>
+                <tr>
+                  <th class="first-col"><h3>Audio file 1</h3></th>
+                  <th>Very High</th>
+                  <th>High</th>
+                  <th>Fair</th>
+                  <th>Low</th>
+                  <th>Very Low</th>
+                </tr>
+                  <tr>
+                    <td class="first-col">Naturlness</td>
+                    <td>
+                      <input
+                        type="radio"
+                        value="5"
+                        name="test2.naturlness1"
+                        required
+                      />
+                    </td>
+                    <td>
+                      <input type="radio" value="4" name="test2.naturlness1" />
+                    </td>
+                    <td>
+                      <input type="radio" value="3" name="test2.naturlness1" />
+                    </td>
+                    <td>
+                      <input type="radio" value="2" name="test2.naturlness1" />
+                    </td>
+                    <td>
+                      <input type="radio" value="1" name="test2.naturlness1" />
+                    </td>
+                  </tr>
+                <!-- </div> -->
+                <tr>
+                  <td class="first-col">Intelligibility</td>
+                  <td>
+                    <input type="radio" value="5" name="test2.intelligibility1" required />
+                  </td>
+                  <td><input type="radio" value="4" name="test2.intelligibility1" /></td>
+                  <td><input type="radio" value="3" name="test2.intelligibility1" /></td>
+                  <td><input type="radio" value="2" name="test2.intelligibility1" /></td>
+                  <td><input type="radio" value="1" name="test2.intelligibility1" /></td>
+                </tr>
+              </table>
+            </div>
+            <div class="test2.response2">
+              <table>
+                <tr>
+                  <th class="first-col"><h3>Audio file 2</h3></th>
+                  <th>Very High</th>
+                  <th>High</th>
+                  <th>Fair</th>
+                  <th>Low</th>
+                  <th>Very Low</th>
+                </tr>
+                <tr>
+                  <td class="first-col">Naturlness</td>
+                  <td>
+                    <input
+                      type="radio"
+                      value="5"
+                      name="test2.naturlness2"
+                      required
+                    />
+                  </td>
+                  <td>
+                    <input type="radio" value="4" name="test2.naturlness2" />
+                  </td>
+                  <td>
+                    <input type="radio" value="3" name="test2.naturlness2" />
+                  </td>
+                  <td>
+                    <input type="radio" value="2" name="test2.naturlness2" />
+                  </td>
+                  <td>
+                    <input type="radio" value="1" name="test2.naturlness2" />
+                  </td>
+                </tr>
+              <!-- </div> -->
+                <tr>
+                  <td class="first-col">Intelligibility</td>
+                  <td>
+                    <input type="radio" value="5" name="test2.intelligibility2" required />
+                  </td>
+                  <td><input type="radio" value="4" name="test2.intelligibility2" /></td>
+                  <td><input type="radio" value="3" name="test2.intelligibility2" /></td>
+                  <td><input type="radio" value="2" name="test2.intelligibility2" /></td>
+                  <td><input type="radio" value="1" name="test2.intelligibility2" /></td>
+                </tr>
+              </table>
+            </div>
+            <div class="test2.response3">
+              <table>
+                <tr>
+                  <th class="first-col"><h3>Audio file 1-2</h3></th>
+                  <th>Very High</th>
+                  <th>High</th>
+                  <th>Fair</th>
+                  <th>Low</th>
+                  <th>Very Low</th>
+                </tr>
+                <tr>
+                  <td class="first-col">Speaker Similarity</td>
+                  <td>
+                    <input
+                      type="radio"
+                      value="5"
+                      name="test2.similarity"
+                      required
+                    />
+                  </td>
+                  <td>
+                    <input type="radio" value="4" name="test2.similarity" />
+                  </td>
+                  <td>
+                    <input type="radio" value="3" name="test2.similarity" />
+                  </td>
+                  <td>
+                    <input type="radio" value="2" name="test2.similarity" />
+                  </td>
+                  <td>
+                    <input type="radio" value="1" name="test2.similarity" />
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="btn-block">
+          <button type="submit">Send Feedback</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
