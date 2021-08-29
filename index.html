@@ -52,7 +52,6 @@
         box-shadow: 0 2px 5px #ccc;
       }
       input:not([type='radio']) {
-        width: calc(100% - 10px);
         padding: 5px;
         border: 1px solid #ccc;
         border-radius: 3px;
@@ -65,7 +64,7 @@
       }
       .email {
         display: block;
-        width: 45%;
+        width: 300px;
       }
       input:hover,
       textarea:hover {
@@ -140,8 +139,8 @@
       }
       .select {
         width: 100%;
-        min-width: 15ch;
-        max-width: 30ch;
+        min-width: 80px;
+        max-width: 100px;
         border: 1px solid var(--select-border);
         border-radius: 0.25em;
         padding: 0.25em 0.5em;
@@ -172,10 +171,13 @@
           </p>
         </div>
         <hr />
+        <div class="Name">
+          <label for="Name"><h2>Name <span class="required">*</span></h2></label>
+          <input class="name" type="text" name="Name" required />
+        </div>
+        <br>
         <div class="Email">
-          <label for="Email-address"
-            ><h2>Email address <span class="required">*</span></h2></label
-          >
+          <label for="Email-address"><h2>Email address <span class="required">*</span></h2></label>
           <input class="email" type="text" name="Email" required />
         </div>
         <br>
@@ -521,6 +523,7 @@
             </div>
           </div>
         </div>
+        <hr />
         <div class="btn-block">
           <button type="submit">Send Feedback</button>
         </div>
